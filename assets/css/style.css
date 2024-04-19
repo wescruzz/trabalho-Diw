@@ -1,0 +1,314 @@
+/* Início das configurações gerais.*/
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+
+}
+
+/* Fim das configurações gerais.*/
+
+/* Início das configurações de header.*/
+header {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 0% 8% 0% 2%;
+
+}
+
+
+nav {
+    width: 500px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10%; 
+}
+
+.itens_header {
+    background-color: rgb(255, 254, 254);
+    padding: 10px;
+    
+}
+
+.itens_header a {
+    text-decoration: none;
+    color: #0D6EFD;
+    
+}
+
+.itens_header:hover, .itens_header a:hover {
+    transition-duration: 0.3s;
+    background-color: #0d6dfd33;
+    border-radius: 10%; 
+}
+
+
+
+
+/* Fim das configurações de header.*/
+
+/* Início das configurações de main.*/
+
+main {
+
+    margin: 0 auto;
+}
+
+.main_index  h3 {
+    padding: 10px;
+    border-bottom: solid black;  
+}
+
+.img_perfil {
+    padding: 2%;
+}
+
+.img_perfil > img {
+    border-radius: 3%;
+}
+
+.sobre_perfil {
+    padding: 2%;
+}
+
+.icons {
+    display: flex;
+    gap: 2%;
+    font-size: 2vw;
+}
+#icon-instagram:hover, #icon-github:hover, #icon-linkedln:hover {
+    color: #0D6EFD;
+}
+
+.div_cards_dois {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.carousel-item p {
+    color: white;
+    font-size: large;
+    background-color: rgba(9, 10, 10, 0.568);
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.iframe_yt {
+    height: 560px;
+}
+
+#Conteudo_mobile_media {
+    text-indent: 14px;
+    display: none;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+/* Fim das configurações de main.*/
+
+/* início das configurações de Repo.*/
+
+#body_repo {
+    height: 100vH;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#header_repo {
+    margin-top: 100px;
+    display: block;
+    
+}
+
+#main_repo {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+
+    
+}
+
+
+.repo_section {
+    max-width: 700px;
+    max-height: 800px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.384) 3px;
+    border-radius: 10%;
+    padding: 8%;
+    display: none;
+    
+}
+
+.repo_section > h2 {
+    padding: 10px;
+    border-bottom: solid rgb(0, 0, 0); 
+}
+
+.descricao_repositorio > h3 {
+
+    color: #0D6EFD;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.descricao_repositorio > p {
+    text-indent: 10px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+#repositorio_1:target, #repositorio_2:target,#repositorio_3:target, #repositorio_4:target {
+    display: block;
+}
+
+.tags_gh {
+    color: white;
+    background-color: #0D6EFD;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+
+/* Fim das configurações de Repo.*/
+
+/* Media Queries.*/
+
+@media(max-width: 1200px){
+    .iframe_yt {
+        height: 468px;
+    }
+    
+}
+
+@media(max-width: 992px){
+    .iframe_yt {
+        height: 348px;
+    }
+
+    .sobre_perfil {
+        margin-left: 160px;
+    } 
+}
+
+@media(max-width: 767px){
+    body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+        padding: 0% 8% 0% 2%;
+    
+    }
+
+    .itens_header {
+        color: #0D6EFD;
+    background-color: #0d6dfd4f;
+    
+        border-radius: 10%; 
+        
+    }
+
+    #header_repo {
+        display: none;
+        
+    }
+
+    .sobre_perfil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+    
+    }
+    #slides {
+    display: none;
+   }
+    #Conteudo_mobile_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   #Conteudo_mobile_media img {
+        
+        width: 400px;
+        height: 200px;
+   }
+   .itens_header {
+        text-wrap: nowrap;
+        font-size: medium;
+   }
+   
+
+   .icons {
+    font-size: larger;
+   }
+
+   #main_repo {
+    display: block;
+   }
+
+   .repo_section {
+    max-width: 500px;
+    background-color: transparent;
+    border: transparent;
+    
+
+    
+}
+
+
+   
+
+
+
+   
+
+
+}
+
+
+
+
+
+
